@@ -1,0 +1,146 @@
+* {
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 0.9em;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+body > p:nth-child(5) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul#list_names {
+    width: 100%;
+    flex-direction: column;
+    max-height: 300px;
+    flex-wrap: wrap;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section:nth-child(2) > p {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+input[type=number] {
+    width: 20%;
+}
+
+#createGroups {
+    width: 70%;
+}
+
+@media (max-width: 400px) {
+
+    section p {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    input[type=number],
+    #createGroups {
+        width: 100%
+    }
+}
+
+@media (min-width: 290px) {
+    #groups {
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 289px) {
+    #groups {
+        flex-direction: column;
+    }
+}
+
+#groups {
+    display: flex;
+    width: 100%;
+}
+
+
+h1 {
+    border: 0.2em solid;
+    padding: 15px 32px;
+    text-align: center;
+}
+
+button {
+    background-color: #ec461ce8; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+input[type=text],
+input[type=number] {
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=number] {
+    margin-bottom: 0.5em;
+}
+
+@media (min-width:290px) {
+    .groupDiv {
+        margin: 0px 12px;
+        margin-top: 0px;
+        width: 100%;
+    }
+}
+
+@media (max-width:289px) {
+    .groupDiv {
+        margin: 0px;
+        margin-top: 12px;
+    }
+}
+
+.groupDiv {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid;
+    align-items: center;
+    text-align: center;
+}
+
+.titleDiv {
+    background-color: yellow;
+    border-bottom: 3px solid black;
+    width: 100%;
+}
+
+.namesDiv {
+    flex: 2;
+    width: 100%;
+}
+
+ul#list_names li,
+.namesDiv div {
+    line-height: 2em;
+}
+
